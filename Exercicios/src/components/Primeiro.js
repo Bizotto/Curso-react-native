@@ -3,4 +3,4 @@ import { Text } from "react-native";
 import estilo from "./estilo";
 
 
-export default () => <Text style={estilo.fontG}>Primeiro e ultimo </Text>
+export default () => <Text style={estilo.txtG}>Primeiro e ultimo </Text>
