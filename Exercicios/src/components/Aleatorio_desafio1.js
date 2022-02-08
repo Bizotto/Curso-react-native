@@ -3,10 +3,10 @@ import {Text} from "react-native";
 import estilo from "./estilo";
 
 
-export default props => {
+export default ({min, max}) => { /** usando destructuring de codigo gerar novas constantes*/
 
-const delta = props.max - props.min + 1
-const Aleatorios = parseInt(Math.random() * delta) + props.min
+const delta = max - min + 1
+const Aleatorios = parseInt(Math.random() * delta) + min
 return(
 
 <Text style={estilo.txtG}>
