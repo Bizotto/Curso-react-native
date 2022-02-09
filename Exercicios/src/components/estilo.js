@@ -1,11 +1,9 @@
-import { StyleSheet } from "react-native";
-
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-    
-    txtG:{
-        fontSize: 30,
-        textAlign: "center",
-        // padding: 10,      
-    }
-})
+  txtG: {
+    fontSize: 30,
+    textAlign: 'center',
+    // padding: 10,
+  },
+});
