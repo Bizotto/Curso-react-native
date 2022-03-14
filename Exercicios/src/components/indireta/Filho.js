@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Text, view} from 'react-native';
-import estilo from './estilo';
+import estilo from '../estilo';
 
 export default props => {
   function gerarNumero(min, max) {
@@ -12,7 +12,8 @@ export default props => {
     <Button
       tittle="Executar"
       onPress={function () {
-        gerarNumero(props.min, props.max);
+        const n = gerarNumero(props.min, props.max);
+        props.funcao(n), 'O valor é: ';
       }}
     />
   );
