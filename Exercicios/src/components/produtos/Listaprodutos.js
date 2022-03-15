@@ -9,7 +9,7 @@ export default props => {
       return (
         <Text key={p.id}>
           {p.id}
-          {p.nome} tem o valor de R$ {p.preco}
+          {p.nome} Tem o valor de R$ {p.preco}
         </Text>
       );
     });

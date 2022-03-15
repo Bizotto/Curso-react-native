@@ -7,7 +7,7 @@ export default props => {
   const producRender = ({item: p}) => {
     return (
       <Text>
-        {p.id}){p.nome}
+        {p.id}){p.nome} - R$ {p.preco}
       </Text>
     );
   };
