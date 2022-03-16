@@ -3,7 +3,7 @@ import {Text, TextInput, View, } from 'react-native'
 import estilo from './estilo'
 
 export default props => {
-  const [nome, setNome] =useState('teste') 
+  const [nome, setNome] =useState('Teste') 
     return (
         <View> 
           <Text style={estilo.txtG} >
