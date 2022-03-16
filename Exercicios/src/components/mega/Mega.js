@@ -5,10 +5,21 @@ import estilo from '../estilo';
 export default class Mega extends Component {
   state = {
     qtdeNumeros: this.props.qtdeNumeros,
+    numeros: [], 
   };
   aterarQtdeNumero = qtde => {
-    this.setState({qtdeNumeros: qtde});
+    this.setState({qtdeNumeros: +qtde});
   };
+
+  gerarNumero = () => {
+    this.state({numeros:[ ]})
+  }
+
+  gerarNumeroNaoContido = nums =>{
+    const novo = parseInt(Math.random() * 60 ) + 1
+    return nums.includes(novo) ? this.gerarNumeroNaoContido(nums): novo
+  }
+
   render() {
     return (
       <>
@@ -20,7 +31,7 @@ export default class Mega extends Component {
           keyboardType={'numeric'}
           style={{borderBottomWidth: 1}}
           placeholder="quantidade de numeros"
-          value={this.state.qtdeNumeros}
+          value={String(this.state.qtdeNumeros)}
           onChangeText={this.aterarQtdeNumero}
         />
       </>
