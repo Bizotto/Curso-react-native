@@ -20,4 +20,4 @@ export default props => {
       <Filho min={1} max={60} funcao={exibirValor} />;
     </>
   );
-};
+}

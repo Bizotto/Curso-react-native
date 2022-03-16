@@ -1,15 +1,15 @@
 import React, {useState} from 'react'
 import {Text, TextInput, View, } from 'react-native'
-import estilo from '../estilo'
+import estilo from './estilo'
 
 export default props => {
   const [nome, setNome] =useState('teste') 
     return (
         <View> 
-          <Text>
+          <Text style={estilo.txtG} >
             {nome}
           </Text>
-          <TextInput
+          <TextInput style={estilo.txtG} 
           placeholder="Digite seu nome"
           value={nome}
           onChangeText={nome => setNome(nome)}
